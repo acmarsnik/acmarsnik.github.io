@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+// @import "~bootstrap/dist/css/bootstrap.css";
+@import "~bootstrap/dist/css/bootstrap.css";
+// #navigation,.navbar .navbar-default{
+//     background-color: #8E8B82;
+//   }
+
+//   .navbar-brand{
+//     color: #343434;
+//     font-family: 'Lobster Two', sans-serif;
+//   }
+
+.navbar-am {
+  background-color: #8e8b82;
+  font-family: 'Lobster Two', sans-serif;
+}
+/* change the brand and text color */
+.navbar-am .navbar-brand,
+.navbar-am .navbar-text {
+  color: #343434;
+  font-size: 3.25rem;
+}
+/* change the link color */
+.navbar-am .navbar-nav .nav-link {
+  color: #343434;
+  font-size: 1.5rem;
+}
+/* change the color of active or hovered links */
+.navbar-am .nav-item.active .nav-link,
+.navbar-am .nav-item:hover .nav-link {
+  color: #ffffff;
+}
