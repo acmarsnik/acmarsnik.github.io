@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { AppsComponent } from './apps/apps.component';
+import { BlogComponent } from './blog/blog.component';
 
 export const routes: Routes = [
   {
@@ -17,6 +18,10 @@ export const routes: Routes = [
       path: 'apps',
       component: AppsComponent
   },
+  {
+    path: 'blog',
+    component: BlogComponent
+},
   {
       path: '',
       redirectTo: '/home',

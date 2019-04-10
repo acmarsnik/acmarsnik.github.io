@@ -9,15 +9,34 @@
         </a>
       </div>
     </div>
-
     <div fxLayout="row wrap">
       <div class="nav navbar-nav" routerLinkActive="active">
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="home">Home</a></div>
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="about">About</a></div>
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="apps">Apps</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="blog">Blog</a></div>
       </div>
     </div>
 
+    <mat-toolbar color="primary">
+      <span>Responsive Navigation</span> <span class="example-spacer"></span>
+      <div class="navbar-am nav-item"><a class="nav-link" routerLink="home" mat-button>Home</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="about" mat-button>About</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="apps" mat-button>Apps</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="blog" mat-button>Blog</a></div>
+      <!-- <a href="#" mat-button>Menu Item 1</a> 
+      <a href="#" mat-button>Menu Item 2</a>
+      <a href="#" mat-button>Menu Item 3</a> 
+      <a href="#" mat-button>Menu Item 4</a> -->
+    </mat-toolbar>
+
+    
+
   </div>
+  <div flex fxLayout="row" fxLayout.lt-sm="column">
+      <div fxFlex="50">X</div>
+      <div fxFlex="33">Y</div>
+      <div fxFlex="27">Z</div>
+    </div>
 </nav>
 <router-outlet></router-outlet>
