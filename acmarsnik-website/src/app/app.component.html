@@ -1,42 +1,43 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<nav id="navigation" class="navbar-am navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div fxLayout="row wrap" fxLayoutAlign=" center">
-      <div class="row navbar-header">
-        <a routerLink="home">
-          <img src="../assets/img/navbar_image_am.png" width="100rem" height="150rem">
-          <p class="navbar-am navbar-brand">Albert Marsnik</p>
-        </a>
-      </div>
-    </div>
-    <div fxLayout="row wrap">
+
+<mat-toolbar color="primary" layout="row" layout-fill>
+  <div layout='col' layout-fill>
+    <a routerLink="home">
+      <img src="../assets/img/navbar_image_am.png" width="40rem">
+    </a>
+  </div>
+  <div layout='col' layout-fill>
+    <a routerLink="home">
+      <p class="navbar-am navbar-brand" style="padding-top: 14px;">
+        Albert Marsnik
+      </p>
+    </a>
+  </div>
+  <span class="example-spacer"></span>
+  <!-- <span>Responsive Navigation</span> <span class="example-spacer"></span> -->
+  <a class="nav-link space-between" routerLink="home" mat-button layout='col'>Home</a>
+  <a class="nav-link space-between" routerLink="about" mat-button>About</a>
+  <a class="nav-link space-between" routerLink="apps" mat-button>Apps</a>
+  <a class="nav-link space-between" routerLink="blog" mat-button>Blog</a>
+  <!-- <a href="#" mat-button>Menu Item 1</a> 
+            <a href="#" mat-button>Menu Item 2</a>
+            <a href="#" mat-button>Menu Item 3</a> 
+            <a href="#" mat-button>Menu Item 4</a> -->
+</mat-toolbar>
+
+<!-- <div fxLayout="row wrap">
       <div class="nav navbar-nav" routerLinkActive="active">
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="home">Home</a></div>
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="about">About</a></div>
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="apps">Apps</a></div>
         <div class="navbar-am nav-item"><a class="nav-link" routerLink="blog">Blog</a></div>
       </div>
-    </div>
-
-    <mat-toolbar color="primary">
-      <span>Responsive Navigation</span> <span class="example-spacer"></span>
-      <div class="navbar-am nav-item"><a class="nav-link" routerLink="home" mat-button>Home</a></div>
-        <div class="navbar-am nav-item"><a class="nav-link" routerLink="about" mat-button>About</a></div>
-        <div class="navbar-am nav-item"><a class="nav-link" routerLink="apps" mat-button>Apps</a></div>
-        <div class="navbar-am nav-item"><a class="nav-link" routerLink="blog" mat-button>Blog</a></div>
-      <!-- <a href="#" mat-button>Menu Item 1</a> 
-      <a href="#" mat-button>Menu Item 2</a>
-      <a href="#" mat-button>Menu Item 3</a> 
-      <a href="#" mat-button>Menu Item 4</a> -->
-    </mat-toolbar>
-
-    
-
-  </div>
-  <div flex fxLayout="row" fxLayout.lt-sm="column">
-      <div fxFlex="50">X</div>
-      <div fxFlex="33">Y</div>
-      <div fxFlex="27">Z</div>
-    </div>
-</nav>
-<router-outlet></router-outlet>
+    </div> -->
+<!-- <div flex fxLayout="row" fxLayout.lt-sm="column">
+    <div fxFlex="50">X</div>
+    <div fxFlex="33">Y</div>
+    <div fxFlex="27">Z</div>
+  </div> -->
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>

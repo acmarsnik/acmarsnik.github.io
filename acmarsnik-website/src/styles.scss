@@ -31,3 +31,28 @@
 .navbar-am .nav-item:hover .nav-link {
   color: #ffffff;
 }
+
+.mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .mat-stroked-button {
+  font-family: 'Lobster Two', sans-serif;
+  font-size: 27px;
+  font-weight: 500;
+}
+
+.mat-toolbar.mat-primary {
+  background: #8e8b82;
+  color: #343434;
+}
+.mat-button:hover {
+   color:#fff;
+}
+
+.nav-item {
+  // ...
+  &[align='end'] {
+    justify-content: flex-end;
+  }
+
+  &[align='center'] {
+    justify-content: center;
+  }
+}
