@@ -1,0 +1,42 @@
+<mat-toolbar color="primary" layout="row" layout-fill>
+  <div fxLayout="row" fxLayout.lt-xs="column">
+    <div class="px-2">
+      <a routerLink="home">
+        <img src="../assets/img/navbar_image_am.png" width="35rem">
+      </a>
+    </div>
+    <div class="px-2">
+      <a routerLink="home">
+        <p class="navbar-am navbar-brand" style="padding-top: 14px;">
+          Albert Marsnik
+        </p>
+      </a>
+    </div>
+  </div>
+  <span fxFlex></span>
+  <div fxLayout="row" fxLayoutAlign="end end" fxHide.lt-sm fxLayout.lt-sm="column">
+    <a routerLink="home" mat-button layout='col'>Home</a>
+    <a routerLink="about" mat-button>About</a>
+    <a routerLink="apps" mat-button>Apps</a>
+    <a routerLink="blog" mat-button>Blog</a>
+  </div>
+  <!-- <a href="#" mat-button>Menu Item 1</a> 
+            <a href="#" mat-button>Menu Item 2</a>
+            <a href="#" mat-button>Menu Item 3</a> 
+            <a href="#" mat-button>Menu Item 4</a> -->
+</mat-toolbar>
+
+
+<!-- <div fxLayout="row wrap">
+      <div class="nav navbar-nav" routerLinkActive="active">
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="home">Home</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="about">About</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="apps">Apps</a></div>
+        <div class="navbar-am nav-item"><a class="nav-link" routerLink="blog">Blog</a></div>
+      </div>
+    </div> -->
+<!-- <div flex fxLayout="row" fxLayout.lt-sm="column">
+    <div fxFlex="50">X</div>
+    <div fxFlex="33">Y</div>
+    <div fxFlex="27">Z</div>
+  </div> -->

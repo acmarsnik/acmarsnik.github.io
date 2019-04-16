@@ -13,7 +13,9 @@
 
 .navbar-am {
   background-color: #8e8b82;
-  font-family: 'Lobster Two', sans-serif;
+  font-family: "Lobster Two", sans-serif;
+  color: #343434;
+  font-size: 3rem;
 }
 /* change the brand and text color */
 .navbar-am .navbar-brand,
@@ -32,8 +34,14 @@
   color: #ffffff;
 }
 
-.mat-button, .mat-fab, .mat-flat-button, .mat-icon-button, .mat-mini-fab, .mat-raised-button, .mat-stroked-button {
-  font-family: 'Lobster Two', sans-serif;
+.mat-button,
+.mat-fab,
+.mat-flat-button,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button,
+.mat-stroked-button {
+  font-family: "Lobster Two", sans-serif;
   font-size: 27px;
   font-weight: 500;
 }
@@ -43,16 +51,23 @@
   color: #343434;
 }
 .mat-button:hover {
-   color:#fff;
+  color: #fff;
 }
 
 .nav-item {
   // ...
-  &[align='end'] {
+  &[align="end"] {
     justify-content: flex-end;
   }
 
-  &[align='center'] {
+  &[align="center"] {
     justify-content: center;
   }
+}
+
+/* for sidenav to take a whole page */
+html,
+body {
+  margin: 0;
+  height: 100%;
 }
