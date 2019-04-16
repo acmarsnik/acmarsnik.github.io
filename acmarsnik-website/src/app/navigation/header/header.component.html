@@ -1,11 +1,16 @@
 <mat-toolbar color="primary" layout="row" layout-fill>
+  <div fxHide.gt-sm>
+    <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
   <div fxLayout="row" fxLayout.lt-xs="column">
-    <div class="px-2">
+    <div class="px-3 py-1">
       <a routerLink="home">
-        <img src="../assets/img/navbar_image_am.png" width="35rem">
+        <img src="../assets/img/navbar_image_am.png" width="33rem">
       </a>
     </div>
-    <div class="px-2">
+    <div class="px-3">
       <a routerLink="home">
         <p class="navbar-am navbar-brand" style="padding-top: 14px;">
           Albert Marsnik
@@ -14,7 +19,7 @@
     </div>
   </div>
   <span fxFlex></span>
-  <div fxLayout="row" fxLayoutAlign="end end" fxHide.lt-sm fxLayout.lt-sm="column">
+  <div fxLayout="row" fxLayoutAlign="end end" fxHide.lt-md>
     <a routerLink="home" mat-button layout='col'>Home</a>
     <a routerLink="about" mat-button>About</a>
     <a routerLink="apps" mat-button>Apps</a>
